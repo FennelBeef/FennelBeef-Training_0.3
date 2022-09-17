@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实训作业</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/sign.css" />
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+  </head>
+  <body>
+    <div class="container layui-anim layui-anim-fadein">
+      <div class="login-wrapper">
+        <div class="header">注 册</div>
+        <div class="form-wrapper">
+          <input
+            type="text"
+            name="username"
+            placeholder="username"
+            class="input-item"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            class="input-item"
+          />
+          <div class="btn">注册</div>
+        </div>
+        <div class="msg">
+          已有账户，点击
+          <a href="login.html" style="color:#abc1ee ;">登录</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var btn = document.querySelector(".btn");
+  var input_item1 = document.querySelectorAll(".input-item")[0];
+  var input_item2 = document.querySelectorAll(".input-item")[1];
+
+  btn.addEventListener("click", function () {
+    if (input_item1.value==""  || input_item2.value=="") {
+      alert("请输入完整账号或密码");
+    } else {
+      var name = input_item1.value;
+      var pass = input_item2.value;
+      localStorage.setItem(name, pass);
+      alert("您已成功注册！");
+      location.href = "login.html";
+    }
+  });
+</script>
+  <style>
+    body {
+      height: 100vh;
+      cursor: url(https://idealclover.top/usr/themes/clover/assets/imgs/cursor.ico),
+        auto;
+    }
+  </style>

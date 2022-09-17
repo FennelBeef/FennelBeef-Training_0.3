@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.w {
+  width: 800px;
+  padding: 0 50px 0 50px;
+  background-color: white;
+  margin: auto;
+  border-radius: 40px;
+  /* border: 2px solid #000; */
+}
+.bar {
+  height: 50px;
+  /* background-color: pink; */
+  color: #e2231a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.thead {
+  height: 50px;
+  background-color: #f3f3f3;
+  line-height: 50px;
+}
+.item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 120px;
+  /* background-color: blue; */
+  margin: 20px 0 20px 0;
+}
+.p-checkbox {
+  width: 50px;
+  height: 50px;
+}
+.p-goods {
+  display: flex;
+  justify-content: start;
+  width: 550px;
+}
+.p-goods p {
+  margin-left: 50px;
+}
+.p-price {
+  width: 100px;
+}
+footer {
+  width: 100px;
+  height: 50px;
+  background-color: #e54346;
+  font-size: 22px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  margin-left: 700px;
+  cursor:pointer; 
+}
+.p-delete{
+  cursor:pointer; 
+}
+.p-delete:hover{
+  color: #e2231a;
+}

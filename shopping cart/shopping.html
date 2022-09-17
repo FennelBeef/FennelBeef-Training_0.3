@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>实训作业</title>
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/shopping.css" />
+    <script src="../js/add.js"></script>
+  </head>
+  <body>
+    <div class="layui-fluid" style="height: 60px; background: #393d44">
+      <ul class="layui-nav layui-nav-child-r">
+        <li class="layui-nav-item"><a href="../index.html">主页</a></li>
+        <li class="layui-nav-item">
+          <a href="../Product/mate/HUAWEI Mate 50 Pro.html">商品</a>
+        </li>
+        <li class="layui-nav-item layui-this">
+          <a href="../shopping cart/shopping.html">购物车</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="../sign&login/login.html">登录/注册</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w" style="height: 600px; overflow-y: scroll">
+      <div class="bar">全部商品</div>
+      <div class="thead">
+        <input type="checkbox" />
+        全选
+      </div>
+      <div class="tbody"></div>
+      <footer class="jiesuan" style="position: absolute; bottom: 40px">
+        去结算
+      </footer>
+    </div>
+
+    <div
+      class="layui-fluid"
+      id="A"
+      style="height: 100px; position: relative; bottom: 0%; background: #393d44"
+    >
+      <div
+        class="layui-container"
+        style="
+          height: 100px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.7);
+        "
+      >
+        <br />
+        <br />京公网安备 11010802038051号备案
+        <br /><br />许可证号：京ICP备2021031939号-1 Email : 902622@qq.com
+      </div>
+    </div>
+
+    <script src="../layui/layui.js"></script>
+    <script>
+      var a = document.querySelector("#A");
+      a.style.width = document.body.clientWidth - 30 + "px";
+      console.log(document.body.clientWidth);
+      layui.use("carousel", function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+          elem: "#test1",
+          width: "100%", //设置容器宽度
+          height: "540px",
+          arrow: "always", //始终显示箭头
+          //,anim: 'updown' //切换动画方式
+        });
+      });
+    </script>
+  </body>
+</html>
+<script>
+  if (localStorage.getItem("cx50") == 1) funchangxiang();
+  if (localStorage.getItem("mini") == 1) funpeijian();
+  if (localStorage.getItem("mate50") == 1) funmate();
+  if (localStorage.getItem("nava9") == 1) funnova();
+  if (localStorage.getItem("P50") == 1) funp();
+</script>
+<script>
+  var nanshou = document.querySelector(".jiesuan");
+  var i = document.querySelectorAll(".item").length;
+  console.log(i);
+  nanshou.addEventListener("click", function () {
+    if (i == 0) {
+      alert("您还未购买任何商品！");
+    } else {
+      alert("您已成功购买！");
+    }
+  });
+</script>
+<script src="../js/delete.js"></script>
+<style>
+  body {
+    height: 100vh;
+    cursor: url(https://idealclover.top/usr/themes/clover/assets/imgs/cursor.ico),
+      auto;
+  }
+</style>

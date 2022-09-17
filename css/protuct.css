@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  clear: both;
+}
+.box,
+.right {
+  float: left;
+}
+.box {
+  width: 450px;
+  height: 450px;
+  margin: 0;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.right {
+  width: 550px;
+}
+.title p {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin: 20px;
+}
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  margin: 0 20px 0 20px;
+  padding: 20px 0 20px 0;
+}
+.shopping {
+  border: 2px red solid;
+  color: red;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor:pointer; 
+}
+.mask {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  opacity: 0.5;
+  z-index: 1000;
+  cursor: move;
+}
+.box2 {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 450px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.box2 img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200%;
+  height: 200%;
+}

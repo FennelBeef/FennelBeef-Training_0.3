@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>实训作业</title>
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+  </head>
+  <body>
+    <div class="layui-fluid" style="height: 60px; background: #393d44">
+      <ul class="layui-nav layui-nav-child-r">
+        <li class="layui-nav-item layui-this"><a href="index.html">主页</a></li>
+        <li class="layui-nav-item">
+          <a href="Product/mate/HUAWEI Mate 50 Pro.html">商品</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="shopping cart/shopping.html">购物车</a>
+        </li>
+        <li class="layui-nav-item">
+          <a href="sign&login/login.html">登录/注册</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="layui-carousel" id="test1">
+      <div carousel-item>
+        <div><img src="img/Carousel/1.png" style="height: 540px" /></div>
+        <div><img src="img/Carousel/4.png" style="height: 540px" /></div>
+        <div><img src="img/Carousel/3.png" style="height: 540px" /></div>
+        <div><img src="img/Carousel/2.jpg" style="height: 540px" /></div>
+        <div><img src="img/Carousel/8.png" style="height: 540px" /></div>
+      </div>
+    </div>
+
+    <div class="layui-fluid" style="height: 100px; background: #393d44">
+      <div
+        class="layui-container"
+        style="
+          height: 100px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.7);
+        "
+      >
+        <br />
+        <br />京公网安备 11010802038051号备案
+        <br /><br />许可证号：京ICP备2021031939号-1 Email : 902622@qq.com
+      </div>
+    </div>
+
+    <script src="layui/layui.js"></script>
+    <script>
+      layui.use("carousel", function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+          elem: "#test1",
+          width: "100%", //设置容器宽度
+          height: "540px",
+          arrow: "always", //始终显示箭头
+          //,anim: 'updown' //切换动画方式
+        });
+      });
+    </script>
+  </body>
+</html>
+<script>
+  console.log("欢迎");
+</script>
+  <style>
+    body {
+      height: 100vh;
+      cursor: url(https://idealclover.top/usr/themes/clover/assets/imgs/cursor.ico),
+        auto;
+    }
+  </style>

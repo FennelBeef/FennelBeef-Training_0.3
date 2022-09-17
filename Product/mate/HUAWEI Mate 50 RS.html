@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="../../layui/css/layui.css" />
+    <script type="text/javascript" src="../../js/bigimg.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/protuct.css" />
+    <title>实训作业</title>
+  </head>
+  <body>
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-fluid" style="height: 60px; background: #393d44">
+        <ul class="layui-nav layui-nav-child-r">
+          <li class="layui-nav-item">
+            <a href="../../index.html">主页</a>
+          </li>
+          <li class="layui-nav-item layui-this">
+            <a href="../mate/HUAWEI Mate 50 Pro.html">商品</a>
+          </li>
+          <li class="layui-nav-item">
+            <a href="../../shopping cart/shopping.html">购物车</a>
+          </li>
+          <li class="layui-nav-item">
+            <a href="../../sign&login/login.html">登录/注册</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+          <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+          <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed">
+              <a class="" href="javascript:;">Mate系列</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="HUAWEI Mate 50 Pro.html">HUAWEI Mate 50 Pro</a>
+                </dd>
+                <dd><a href="HUAWEI Mate 50 RS.html">HUAWEI Mate 50 RS</a></dd>
+                <dd><a href="HUAWEI Mate Xs 2.html">HUAWEI Mate Xs 2</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">P 系列</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../P/HUAWEI P50 Pocket.html">HUAWEI P50 Pocket</a>
+                </dd>
+                <dd><a href="../P/HUAWEI P50 Pro.html">HUAWEI P50 Pro</a></dd>
+                <dd><a href="../P/HUAWEI P50E.html">HUAWEI P50E</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">nova 系列</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../nova/HUAWEI nova 9 SE.html">HUAWEI nova 9 SE</a>
+                </dd>
+                <dd>
+                  <a href="../nova/HUAWEI nova 10 Pro.html"
+                    >HUAWEI nova 10 Pro</a
+                  >
+                </dd>
+                <dd>
+                  <a href="../nova/HUAWEI nova 10.html">HUAWEI nova 10 </a>
+                </dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">畅享系列</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../畅想/华为畅享 50 Pro.html">华为畅享 50 Pro</a>
+                </dd>
+                <dd><a href="../畅想/华为畅享 50.html">华为畅享 50 RS</a></dd>
+                <dd><a href="../畅想/华为畅享20e.html">华为畅享 Xs 2</a></dd>
+              </dl>
+            </li>
+            <li class="layui-nav-item">
+              <a href="javascript:;">配件</a>
+              <dl class="layui-nav-child">
+                <dd>
+                  <a href="../配件/华为 mini 超级快充充电器（Max 25 W）.html"
+                    >华为 mini 超级快充充电器（Max 25 W）</a
+                  >
+                </dd>
+                <dd>
+                  <a href="javascript:;"
+                    >华为 超级快充多设备电源适配器（Max 65 W）</a
+                  >
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px">
+          <div class="container">
+            <div class="box">
+              <img
+                src="https://img14.360buyimg.com/n0/jfs/t1/122048/22/31144/32050/6317352eEdc7d6251/ff4cca6ac43049bd.png"
+                alt=""
+              />
+              <div class="mask"></div>
+            </div>
+
+            <div class="box2">
+              <img
+                src="https://img14.360buyimg.com/n0/jfs/t1/122048/22/31144/32050/6317352eEdc7d6251/ff4cca6ac43049bd.png"
+                class="BigImg"
+              />
+            </div>
+
+            <div class="right">
+              <div class="title">
+                <p>
+                  华为mate50RS 保时捷 新品上市手机 【pro店内可选】 黑蓝瓷
+                  12G+512G
+                </p>
+                <div style="font-size: 10px; margin: 20px; color: #e4393c">
+                  【预订享优先发货】具体手机参数以官网为准，新品上市，全国联保【赠】50元晒单红包+2年保修+运费险
+                </div>
+              </div>
+
+              <div class="price" style="background-color: #f3f3f3">
+                秒杀价：<span style="color: red">9999</span>
+              </div>
+              <button class="shopping">到货通知</button>
+            </div>
+            <script>
+              document.querySelector(".shopping").onclick = function () {
+                alert("真的没有货了 (*゜ロ゜)ノ！ ");
+              };
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <div class="layui-footer" style="height: 60px">
+        <!-- 底部固定区域 -->
+        京公网安备 11010802038051号备案|许可证号：京ICP备2021031939号-1 Email :
+        902622@qq.com
+      </div>
+    </div>
+    <script src="../../layui/layui.js"></script>
+    <script>
+      //JS
+      layui.use(["element", "layer", "util"], function () {
+        var element = layui.element,
+          layer = layui.layer,
+          util = layui.util,
+          $ = layui.$;
+        //头部事件
+        util.event("lay-header-event", {
+          //左侧菜单事件
+          menuLeft: function (othis) {
+            layer.msg("展开左侧菜单的操作", { icon: 0 });
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
+<script>
+  localStorage.setItem("mate50", 0);
+  var btn = document.querySelector(".shopping");
+  btn.addEventListener("click", function () {
+    localStorage.setItem("mate50", 1);
+  });
+</script>
+  <style>
+    body {
+      height: 100vh;
+      cursor: url(https://idealclover.top/usr/themes/clover/assets/imgs/cursor.ico),
+        auto;
+    }
+  </style>

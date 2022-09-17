@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实训作业</title>
+    <link rel="stylesheet" type="text/css" href="../layui/layui.js" />
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+  </head>
+  <body>
+    <div
+      class="container layui-anim layui-anim-fadein"
+      data-anim="layui-anim-scaleSpring"
+    >
+      <div class="login-wrapper">
+        <div class="header">登 录</div>
+        <div class="form-wrapper">
+          <input
+            type="text"
+            name="username"
+            placeholder="username"
+            class="input-item"
+            id="user"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            class="input-item"
+            id="pass"
+          />
+          <div class="btn">登录</div>
+        </div>
+        <div class="msg">
+          没有账户?点击
+          <a href="sign.html">注册</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var btn = document.querySelector(".btn");
+
+  btn.addEventListener("click", function () {
+   var input_item1 = document.querySelector("#user");
+   console.log(input_item1.value);
+  var input_item2 = document.querySelector("#pass");
+  console.log(input_item2.value);
+    if (input_item1.value==""  || input_item2.value=="") {
+      alert("请输入完整账号或密码！");
+    } else {
+      var name = input_item1.value;
+      // console.log(input_item1.innerHTML);
+      var pass = input_item2.value;
+      if (pass == localStorage.getItem(name)) {
+        alert("您已成功登录！");
+        console.log(name+','+pass);
+        // location.href = "../index.html";
+      } else {
+        alert("账号或密码错误！");
+      }
+    }
+  });
+</script>
+  <style>
+    body {
+      height: 100vh;
+      cursor: url(https://idealclover.top/usr/themes/clover/assets/imgs/cursor.ico),
+        auto;
+    }
+  </style>
